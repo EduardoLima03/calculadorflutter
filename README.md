@@ -2,16 +2,14 @@
 
 uma calculadora simples
 
-## Getting Started
+[Nível de dificuldade](Fácil)
 
-This project is a starting point for a Flutter application.
+## Mais Detalhes
 
-A few resources to get you started if this is your first Flutter project:
+*Este aplicativo tem a finalidade de treina meus conecimento no framework Flutter e linguagem Dart, não mesmo importante, demonstra a evolução*
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+##### O que será utilizado
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# calculadoraflutter
++ Responsive Layout (Resolução de tela adaptada ao dispositivo)
++ String Format (Formatação de texto)
++ Launcher Icons [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons)
