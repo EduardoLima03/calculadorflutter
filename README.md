@@ -2,7 +2,7 @@
 
 uma calculadora simples
 
-[Nível de dificuldade](Fácil)
+Nível de dificuldade:* Fácil
 
 ## Mais Detalhes
 
