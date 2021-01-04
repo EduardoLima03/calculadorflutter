@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_calculadora/views/custom_buttom_pad.dart';
 
 class CalculatorPage extends StatefulWidget {
   @override
@@ -34,6 +35,47 @@ class _CalculatorPageState extends State<CalculatorPage> {
                       color: Theme.of(context).accentColor
                     ),
                     ),
+                  ),
+                  Divider(),
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          CustomButtomPad("7"),
+                          CustomButtomPad("8"),
+                          CustomButtomPad("9"),
+                          CustomButtomPad("*"),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          CustomButtomPad("4"),
+                          CustomButtomPad("5"),
+                          CustomButtomPad("6"),
+                          CustomButtomPad("-"),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          CustomButtomPad("1"),
+                          CustomButtomPad("2"),
+                          CustomButtomPad("3"),
+                          CustomButtomPad("+"),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          CustomButtomPad("."),
+                          CustomButtomPad("0"),
+                          CustomButtomPad("/"),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          CustomButtomPad("="),
+                        ],
+                      )
+                    ],
                   ),
                 ],
               ),
