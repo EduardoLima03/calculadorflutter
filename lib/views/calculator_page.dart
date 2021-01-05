@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_calculadora/views/custom_buttom_pad.dart';
 
 class CalculatorPage extends StatefulWidget {
   @override
@@ -8,6 +7,28 @@ class CalculatorPage extends StatefulWidget {
 }
 
 class _CalculatorPageState extends State<CalculatorPage> {
+
+  Widget CustomButtomPad(String text){
+    return Expanded(
+      child: Container(
+        color: Colors.blue.shade50,
+        child: OutlineButton(
+          onPressed: null,
+          padding: EdgeInsets.all(24.0),
+          child: Text(text,
+            style: TextStyle(
+                color: text == 'C'? Colors.red: null,
+                fontSize: 20.0, fontWeight: FontWeight.bold),),
+          borderSide: BorderSide(
+            color: Theme.of(context).primaryColor,
+            style: BorderStyle.solid,
+            width: 1,
+          ),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     var sizeds = MediaQuery.of(context);
@@ -17,7 +38,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
         /// em altura e largura com o atributo constraints
         return SingleChildScrollView(
           child: Container(
-            child: Padding(padding: EdgeInsets.only(left: 16.0, top: sizeds.padding.top, right: 16.0,bottom: 8.0),
+            child: Padding(padding: EdgeInsets.only(left: 16.0, top: sizeds.padding.top+10.0, right: 16.0,bottom: 8.0),
               child: Column(
                 children: [
                   Container(

@@ -20,7 +20,8 @@ class _CustomButtomPadState extends State<CustomButtomPad> {
     return Expanded(
       child: Container(
         color: Colors.blue.shade50,
-        child: OutlineButton(onPressed: null,
+        child: OutlineButton(
+          onPressed: null,
           padding: EdgeInsets.all(24.0),
           child: Text(widget.buttomText,
           style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),),
