@@ -72,7 +72,8 @@ class _CalculatorPageState extends State<CalculatorPage> {
                       ),
                       Row(
                         children: [
-                          CustomButtomPad("="),
+                          CustomButtomPad("C"),
+                          CustomButtomPad('=')
                         ],
                       )
                     ],
